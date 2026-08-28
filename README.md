@@ -74,8 +74,7 @@ one previously meant reading the source or knowing where to look.
 
 This project extracted all of them with
 [doc-gen4](https://github.com/leanprover/doc-gen4), Lean's official
-documentation generator, decoded and verified the output, and published it two
-ways: as a dataset you can query directly, and as a website you can search.
+documentation generator, decoded and verified the output, and published as a website you can search.
 
 ## The Catalog
 
