@@ -1,0 +1,138 @@
+================================================================================
+NOTICE
+================================================================================
+
+This repository describes the Lean-QIT Catalog, a project that extracts and
+publishes the declarations of Lean-QIT. Lean-QIT is licensed under the Apache
+License, Version 2.0, and this notice records the attribution that licence
+requires.
+
+The extracted material itself is distributed from the catalog website at
+https://leanqit-catalog.pages.dev rather than from this repository. The same
+notice and licence are published there.
+
+--------------------------------------------------------------------------------
+1. Upstream work
+--------------------------------------------------------------------------------
+
+    Lean-QIT: Towards a Formal Infrastructure for Quantum Information Theory
+
+    Copyright (c) 2026 QuAIR.
+    Licensed under the Apache License, Version 2.0.
+
+    Source:  https://github.com/QuAIR/Lean-QIT
+    Paper:   https://arxiv.org/abs/2607.09632  (arXiv:2607.09632)
+    Catalog: https://www.quairkit.com/Lean-QIT/
+
+    Paper authors:
+      Chengkai Zhu, Ziao Tang, Guocheng Zhen, Yimeng Cao, Yusheng Zhao,
+      Ranyiliu Chen, Xuanqiang Zhao, Lei Zhang, Xin Wang
+
+    Affiliations:
+      QudeLeap Research, Shanghai
+      The Hong Kong University of Science and Technology (Guangzhou)
+      Quantum Science Center of Guangdong-Hong Kong-Macao Greater Bay Area
+      The University of Hong Kong
+
+A copy of the Apache License, Version 2.0 is distributed with this project as
+LICENSE-Lean-QIT.
+
+--------------------------------------------------------------------------------
+2. Copyright notice retained from the source
+--------------------------------------------------------------------------------
+
+Every one of the 334 Lean source files this data was extracted from carries the
+following header. It is reproduced here verbatim so the notice travels with the
+redistribution:
+
+    Copyright (c) 2026 QuAIR.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: QuAIR Team
+
+--------------------------------------------------------------------------------
+3. What the catalog redistributes
+--------------------------------------------------------------------------------
+
+All of the mathematical content in the catalog and its dataset is the work of
+QuAIR and the Lean-QIT authors:
+
+  * 9,696 declaration names
+  * 9,696 type signatures and their binder structure
+  * 6,946 documentation strings, reproduced verbatim
+  * the module and namespace organisation of the library
+  * every theorem, definition, structure, instance and constructor described
+
+The contribution of this project is the extraction and the interface: a
+pipeline that reads the library and produces a structured dataset, a reference
+index, a search index, and a website for browsing them.
+
+--------------------------------------------------------------------------------
+4. Statement of changes (Apache-2.0 section 4(b))
+--------------------------------------------------------------------------------
+
+No Lean source file was modified. The library was extracted and reformatted:
+
+  * Extracted with doc-gen4, the Lean documentation generator, from Lean-QIT at
+    commit da54e3070298468dc884877726bc45a92c57e4b3, built against Lean
+    toolchain v4.30.0 and the matching Mathlib revision.
+
+  * doc-gen4 produced a SQLite database whose rendered-type column is a
+    length-prefixed binary format. That column was decoded and serialised to
+    JSON Lines, downloadable from the catalog website.
+
+  * Docstrings are reproduced verbatim. Signatures are the type as doc-gen4
+    rendered it. Neither is altered.
+
+  * Added by this project: the extraction itself, the decoder, the structured
+    binder and type-reference fields, and the catalog interface at
+    https://leanqit-catalog.pages.dev
+
+  * No mathematical content was altered, corrected, abridged or reinterpreted.
+
+--------------------------------------------------------------------------------
+5. Citation
+--------------------------------------------------------------------------------
+
+If this catalog helps you find something, cite the library. This is the BibTeX
+entry published in the Lean-QIT README:
+
+    @misc{zhu2026leanqit,
+      title = {Lean-QIT: Towards a Formal Infrastructure for Quantum
+               Information Theory},
+      author = {Chengkai Zhu and Ziao Tang and Guocheng Zhen and Yimeng Cao
+                and Yusheng Zhao and Ranyiliu Chen and Xuanqiang Zhao and
+                Lei Zhang and Xin Wang},
+      year = {2026},
+      eprint = {2607.09632},
+      archivePrefix = {arXiv},
+      primaryClass = {quant-ph},
+      url = {https://arxiv.org/abs/2607.09632}
+    }
+
+--------------------------------------------------------------------------------
+6. This project's own contribution
+--------------------------------------------------------------------------------
+
+The extraction pipeline and the catalog website are this project's own work.
+Neither is published in this repository, and no licence is granted for them;
+all rights are reserved.
+
+The Apache-2.0 terms above govern the Lean-QIT material, wherever this project
+distributes it. They are unaffected by the paragraph above.
+
+--------------------------------------------------------------------------------
+7. Relationship to QuAIR
+--------------------------------------------------------------------------------
+
+This catalog is a separate project built on top of Lean-QIT. It is not
+maintained by QuAIR, and QuAIR has not reviewed or endorsed it. The name
+"Lean-QIT" is used here to identify the library this catalog indexes, which is
+what Apache-2.0 section 6 permits: reasonable and customary use in describing
+the origin of the work.
+
+QuAIR also publishes a hand-curated Theorem Catalog at
+https://www.quairkit.com/Lean-QIT/ with readable mathematical statements and
+literature citations. It is the better starting point for understanding the
+library, and the catalog built on this dataset links to it throughout.
+
+================================================================================
