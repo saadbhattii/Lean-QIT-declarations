@@ -5,6 +5,18 @@ extracted as a machine-readable dataset, and a catalog for browsing them.
 
 ### **[leanqit-catalog.pages.dev](https://leanqit-catalog.pages.dev)**
 
+## Table of Contents
+
+- [Credit](#credit)
+- [This Project](#this-project)
+- [The Catalog](#the-catalog)
+  - [Browse](#browse)
+  - [Declaration pages](#declaration-pages)
+  - [Modules and namespaces](#modules-and-namespaces)
+  - [Stats](#stats)
+  - [About](#about)
+- [Licence and status](#licence-and-status)
+
 ## Credit
 
 Lean-QIT is a Lean 4 library formalizing finite-dimensional quantum information
