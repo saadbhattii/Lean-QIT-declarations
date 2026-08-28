@@ -1,9 +1,12 @@
-# Lean-QIT Declarations
+<h1 align="left">
+  Lean-QIT Declarations
+  <a href="https://leanqit-catalog.pages.dev" style="font-size: 0.5em; vertical-align: middle;">[live]</a>
+</h1>
 
 The complete set of declarations from [Lean-QIT](https://github.com/QuAIR/Lean-QIT),
 extracted as a machine-readable dataset, and a catalog for browsing them.
 
-### **[leanqit-catalog.pages.dev](https://leanqit-catalog.pages.dev)**
+### at: **[leanqit-catalog.pages.dev](https://leanqit-catalog.pages.dev)**
 
 ## Table of Contents
 
